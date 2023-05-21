@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+	<div>
+		<img>
+		<img >
+		<img>
+		<br>
+		<img>
+		<img>
+		<img>
+		<br>
+		<img>
+		<img>
+		<img>
+		<br>
+	</div>
+	<script type="text/javascript">
+		$('img').attr("src","img/orange.png");
+		
+
+		var circles = $('img');
+		
+		
+
+		$(circles[0]).attr("src","img/red.png");
+		$(circles[8]).attr("src","img/red.png");
+		$(circles[2]).attr("src","img/green.png");
+		$(circles[4]).attr("src","img/green.png");
+		$(circles[6]).attr("src","img/green.png");
+	    for (var i=0; i<9;i+=1){
+		$(circles[i]).attr("border", i+1);
+	}
+	for (var i=0; i<9;i+=1){
+		$(circles[i]).attr("width", 20*(i+1));
+	}
+
+		/*
+		$('#orange').attr("src","img/orange.png");
+		$('#green').attr("src","img/green.png");
+		$('img').addClass("hole");
+		$('.hole').attr("src","img/orange.png");*/
+		
+		//$ (circles[4]).attr("src","img/red.png");
+		//for (var i=0; i<circles.length;i++){
+		//circles[i].src = "img/orange.png";}
+	</script>
+</body>
+</html>

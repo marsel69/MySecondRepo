@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+	var div=$("<div>")
+	var elem = [];
+	$('body').append(div);
+	$(div).width("750px")
+	$(div).height("750px")
+
+	elem[0] = $("<img>");
+	$(elem[0]).attr("src","img/01.png");
+	$('div').append(elem[0]);
+
+	elem[1] = $("<img>");
+	$(elem[1]).attr("src","img/02.png");
+	$('div').append(elem[1]);
+
+	elem[2] = $("<img>");
+	$(elem[2]).attr("src","img/03.png");
+	$('div').append(elem[2]);
+
+	elem[3] = $("<img>");
+	$(elem[3]).attr("src","img/04.png");
+	$('div').append(elem[3]);
+
+	elem[4] = $("<img>");
+	$(elem[4]).attr("src","img/05.png");
+	$('div').append(elem[4]);
+
+	$('img').fadeTo(200,0.3);
+
+	$('img').click(function(){
+		$('img').fadeTo(200,0.3);
+		$(this).fadeTo(200,1);
+	});
+
+</script>
+</body>
+</html>

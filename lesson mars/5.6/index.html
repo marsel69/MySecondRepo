@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="jquery-3.6.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="emailID">Почтовый ящичек</label>
+				<input type="email" class="form-control" id="emailID" aria-describedby="podskazka" placeholder="Введите email">
+				<small id="podskazka" class="form-text text-muted">Клянемся не хранить вашу почту от злых третьих лиц.</small>
+			</div>
+			<div class="form-group">
+				<label for="passID">Парольчик</label>
+				<input type="password" class="form-control" id="passID" placeholder="Введите пароль">
+			</div>
+			<button type="submit" class="btn btn-warning">Зарегистрировать</button>
+			<div class="form-group">
+				<label for="sliderID">По шкале от 1 до 5, как хорошо вы сегодня выспались?</label>
+				<input type="range" class="custom-range" min="0" max="999" id="sliderID">
+			</div>
+			<div class="text-center">
+				<h1 id="sliderText">500</h1>
+			</div>
+			<div class="row form-group">
+				<div class="row">
+				<div class="col-5">
+					<label for="Surname">Фамилия</label>
+					<input type="text" class="form-control form-control-lg" placeholder="Введите фамилию">
+				</div>
+				<div class="col-2">
+					<label for="Name">Имя</label>
+					<input type="text" class="form-control form-control-lg" placeholder="Введите имя">
+				</div>
+				<div class="col-5">
+					<label for="Secondname">Отчество</label>
+					<input type="text" class="form-control form-control-lg" placeholder="Введите отчество">
+				</div>
+				<div class="col-3 form-group">
+				<label for="city">Город</label>
+				<select id="city" class="form-control">
+					<option selected>Томск</option>
+					<option>Уфа</option>
+					<option>Омск</option>
+					<option>Красноярск</option>
+				</select>
+			</div>
+				<div class="col-2">
+					<label for="Street">Улица</label>
+					<input type="text" class="form-control" placeholder="Введите улицу">
+				</div>
+				<div class="col-4">
+					<label for="house">Дом</label>
+					<input type="text" class="form-control" placeholder="Введите дом">
+				</div>
+			</div>
+			</div>
+			
+		</form>
+	</div>
+	<script type="text/javascript">
+		$("#sliderID").on("change",function(){
+			$("#sliderText").text($("#sliderID").val());
+		});
+	</script>
+</body>
+</html>

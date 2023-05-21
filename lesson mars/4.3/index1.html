@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript" src="jquery-3.6.1.min.js"></script>
+</head>
+<body>	
+<h1>Список дел</h1>
+<input type="text" placeholder="Добавить элемент">
+<button id="add">Добавить</button>
+<ol id="mylist"></ol>
+<script type="text/javascript">
+$(function()
+	{
+		$('#add').click
+			(function()
+				{
+					var val=$('input').val();
+					var elem=$('<li></li>').text(val);
+					$(elem).append('<button class="rem">Удалить</button>');
+					$('#mylist').append(elem);
+					$('.rem').click(function(){
+						$(this).parent().remove();
+					});
+				});
+	});
+
+</script>
+</body>
+</html>

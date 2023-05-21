@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="jquery-3.6.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class=" navbar sticky-top navbar navbar-dark bg-success navbar-expand-lg">
+	<a class="navbar-brand" href="#">
+		<img src="img/1.png" width="10%" class="d-inline-block align-top" alt="">
+		Сайт постоянных распродаж
+	</a>
+
+	<button  class=" navbar-toggler btn btn-link text-white"  type="button" data-toggle="collapse" data-target="#IDofMENU" aria-controls="#IDofMENU" aria-expanded="false" aria-label="Toggle navigation"> 
+			<span class="navbar-toggler-icon"></span>Коталог</button>
+
+	<div class="collapse navbar-collapse" id="IDofMENU">
+<ul class="navbar-nav mr-auto text-white">
+	
+	<li class="nav-item active dropdown btn-info">
+		
+		<a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+			<img src="icons/3.png" width="20%" >
+		Выбор картинки</a>
+		<div class="dropdown-menu" aria-labelledly='navbarDropdown'>
+			<a id="1" class="dropdown-item" href="#">Первая катринка</a>
+			<a id="2" class="dropdown-item" href="#">Вторая картинка</a>
+			<div class="dropdown-divider"></div>
+			<a id="3" class="dropdown-item" href="#">Третья картинка</a>
+		</div>
+	</li>
+
+	<li class="nav-item dropdown">
+		
+		<a  class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+			<img src="icons/5.png" width="20%">
+		Выбор цвета</a>
+		<div class="dropdown-menu" aria-labelledly='navbarDropdown'>
+			<a id="pick1" class="dropdown-item" href="#">Красный</a>
+			<a id="pick2" class="dropdown-item" href="#">Голубой</a>
+			<div class="dropdown-divider"></div>
+			<a id="pick3" class="dropdown-item" href="#">Желтый</a>
+		</div>
+	</li>
+
+	<li class="nav-item dropdown">
+		<img src="icons/2.png" width="20%">
+		<button  type="button" class="btn btn-link text-white" >Корзина</button>
+	</li> 
+	<li class="nav-item dropdown">
+		
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+			<img src="icons/iconfinder_sale_1_3890937.png" width="20%">
+		Скидки</a>
+		<div class="dropdown-menu" aria-labelledly='navbarDropdown'>
+			<a class="dropdown-item" href="#">Ссылка раз</a>
+			<a class="dropdown-item" href="#">Ссылка двас</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Особенная ссылка</a>
+		</div>
+	</li>
+	<li class="nav-item dropdown">
+		
+		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+			<img src="icons/1.png" width="20%">
+		Новости</a>
+		<div class="dropdown-menu" aria-labelledly='navbarDropdown'>
+			<a class="dropdown-item" href="#">Ссылка раз</a>
+			<a class="dropdown-item" href="#">Ссылка двас</a>
+			<div class="dropdown-divider"></div>
+			<a class="dropdown-item" href="#">Особенная ссылка</a>
+		</div>
+	</li>
+
+</ul>
+</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-m3">
+		<p id="fr">Распродаж и скидок НЕТ</p>
+		<img id="image" class="" src="">
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$('#pick1').click(function(event){
+		$('#fr').css("color","red");
+
+		$('#pick2').click(function(event){
+		$('#fr').css("color","blue");
+
+		$('#pick3').click(function(event){
+		$('#fr').css("color","yellow");
+		
+	});
+	});
+	});
+	$('1').css
+	$('image')
+</script>
+
+</body>
+</html>

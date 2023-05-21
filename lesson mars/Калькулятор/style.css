@@ -1,0 +1,20 @@
+button {
+	width: 100px;
+	height: 80px;
+	background-color: lightgrey;
+	border-radius: 20px;
+	font-size: 20pt;
+}
+h1 {
+	margin-left: 100px;
+}
+#result{
+	font-size: 50px;
+	text-align: right;
+}
+#zero{
+	width: 202px;
+}
+#calculate{
+	width: 350px;
+}
